@@ -4,16 +4,12 @@
     --clr-background: hsl(0, 0%, 100%);
     --clr-body: hsl(212, 45%, 89%);
     --clr-primary: hsl(220, 15%, 55%);
-    --clr-h1: hsl(218, 44%, 22%);
+    --clr-title: hsl(218, 44%, 22%);
 
     --ff-primary: 'Outfit', sans-serif;
 
-    --fs-400: 0.75rem;
     --fs-600: 1rem;
-    --fs-700: 1.5rem;
     --fs-800: 1.6rem;
-    --fs-900: 2rem;
-    --fs-1000: 2.2rem;
     --fs-1100: 2.4rem;
 
     --fw-regular: 400;
@@ -104,7 +100,7 @@ body{
 }
 
 h1{
-    color: var(--clr-h1);
+    color: var(--clr-title);
     font-weight: var(--fw-bold);
     font-size: 2.2rem;
     line-height: 2.8rem;
