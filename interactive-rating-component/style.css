@@ -15,12 +15,20 @@
     --width-desktop: 90rem;
 }
 body{
-    font-size: --fs-regular;
+    min-height: 100svh;/*fallback if svh is not supported*/
+    min-height: 100vh;
+    
+    font-size: var(--fs-regular);
     font-family: 'Overpass', sans-serif;
     font-weight: var(--fw-regular);
     color: var(--clr-medium);
 
     background-color: var(--clr-darker);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 main{
