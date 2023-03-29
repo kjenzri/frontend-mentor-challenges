@@ -31,10 +31,28 @@ body{
     justify-content: center;
 }
 
-main{
-    background-color: var(--clr-dark);
-}
-
 h1{
     color: var(--clr-lighter);
+}
+
+.container{
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+
+    width: 412px;
+    height: 416px;
+
+    border-radius: 30px;
+
+    padding: 2rem;
+}
+
+.oval{
+    background-color: var(--clr-dark);
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
