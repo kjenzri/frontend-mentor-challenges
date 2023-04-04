@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
-
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,13 +21,39 @@
         Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!
       </p>
-      <form action="thank-you.html">
-        <ol>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
+      <form class="form-rates" action="thank-you.html">
+        <input type="radio" name="rates" id="one">
+        <input type="radio" name="rates" id="two">
+        <input type="radio" name="rates" id="two">
+        <input type="radio" name="rates" id="three">
+        <input type="radio" name="rates" id="four">
+        <input type="radio" name="rates" id="five">
+        <ol class="rates">
+          <li>
+            <label for="one">
+              <div class="oval oval-rates">1</div>
+            </label>
+          </li>
+          <li>
+            <label for="two">
+              <div class="oval oval-rates">2</div>
+            </label>
+          </li>
+          <li>
+            <label for="three">
+              <div class="oval oval-rates">3</div>
+            </label>
+          </li>
+          <li>
+            <label for="four">
+              <div class="oval oval-rates">4</div>
+            </label>
+          </li>
+          <li>
+            <label for="five">
+              <div class="oval oval-rates">5</div>
+            </label>
+          </li>
         </ol>
         <input type="submit" value="SUBMIT" />
       </form>
