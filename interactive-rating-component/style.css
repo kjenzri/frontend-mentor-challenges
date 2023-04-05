@@ -55,10 +55,10 @@ body{
 
 h1{
     color: var(--clr-lighter);
-    margin: 30px 0px 7px 0px;
-    font-size: var(--fs-700);
-    font-weight: var(--fw-bold);
-    line-height: 50px;
+    margin: 30px 0px 2px 0px;
+    font-size: 28px;
+    font-weight: var(--fw-medium);
+    line-height: 51px;
 }
 
 .container{
@@ -69,7 +69,7 @@ h1{
 
     border-radius: 30px;
 
-    padding: 2rem;
+    padding: 2rem 39px 2rem 2rem;
 }
 
 .oval{
@@ -99,7 +99,7 @@ h1{
     list-style: none;
     
 
-    margin: 24px 0px 32px 0px;
+    margin: 22px 0px 32px 0px;
 }
 
 .form-rates input[type='radio']{
@@ -125,4 +125,10 @@ h1{
     font-size: var(--fs-regular);
     font-weight: var(--fw-medium);
     letter-spacing: 2px;
+
+    line-height: 49px;
+}
+
+footer{
+    display: none;
 }
