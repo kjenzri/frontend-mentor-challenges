@@ -106,11 +106,24 @@ h1{
     display: none;
 }
 
+.form-rates input[type='radio']:checked + .oval-rates{
+    background-color: var(--clr-light);
+    color: var(--clr-lighter);
+}
+
 .oval-rates{
     width: 51px;
     height: 51px;
     font-size: 16px;
     color: var(--clr-medium);
+
+    transition: background-color .5s ease;
+}
+
+.oval-rates:hover{
+    background-color: var(--clr-primary);
+    color: var(--clr-lighter);
+    cursor: pointer;
 }
 
 .form-rates input[type='submit']{
@@ -127,6 +140,13 @@ h1{
     letter-spacing: 2px;
 
     line-height: 49px;
+
+    transition: all .5s ease;
+}
+.form-rates input[type='submit']:hover{
+    background-color: var(--clr-lighter);
+    color: var(--clr-primary);
+    cursor: pointer;
 }
 
 footer{
