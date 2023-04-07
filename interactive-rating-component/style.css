@@ -126,7 +126,7 @@ h1{
     cursor: pointer;
 }
 
-.form-rates input[type='submit']{
+.form-rates button{
     background-color: var(--clr-primary);
     border: 0;
     width: 100%;
@@ -143,13 +143,13 @@ h1{
 
     transition: all .5s ease;
 }
-.form-rates:valid input[type='submit']:hover{
+.form-rates:valid button:hover{
     background-color: var(--clr-lighter);
     color: var(--clr-primary);
     cursor: pointer;
 }
 
-.form-rates:invalid input[type='submit']{
+.form-rates:invalid button{
     background-color: var(--clr-medium);
     cursor: not-allowed;
 }
