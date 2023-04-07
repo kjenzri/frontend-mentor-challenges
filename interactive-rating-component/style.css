@@ -143,10 +143,15 @@ h1{
 
     transition: all .5s ease;
 }
-.form-rates input[type='submit']:hover{
+.form-rates:valid input[type='submit']:hover{
     background-color: var(--clr-lighter);
     color: var(--clr-primary);
     cursor: pointer;
+}
+
+.form-rates:invalid input[type='submit']{
+    background-color: var(--clr-medium);
+    cursor: not-allowed;
 }
 
 footer{
