@@ -160,12 +160,36 @@ footer{
 
 .thank-you{
     text-align: center;
+
+    padding: 45px 40px 45px 32px;
+}
+
+.thank-you__container{
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .thank-you__selected-rate{
     color: var(--clr-primary);
     background-color: var(--clr-dark);
+
     border-radius: 22.5px;
+
     width: 193px;
     height: 32px;
+
+    margin: 32px 32px 45px 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you h1{
+    margin: 0px 0px 7px 0px;
+    line-height: 35px;
 }
