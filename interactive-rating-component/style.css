@@ -154,10 +154,6 @@ h1{
     cursor: not-allowed;
 }
 
-footer{
-    display: none;
-}
-
 .thank-you{
     text-align: center;
 
@@ -192,4 +188,12 @@ footer{
 .thank-you h1{
     margin: 0 0 0.438rem 0;
     line-height: 2rem;
+}
+
+footer{
+    margin: 2rem;
+}
+
+footer > a:visited{
+    color: var(--clr-medium);
 }
