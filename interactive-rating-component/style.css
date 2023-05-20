@@ -191,6 +191,7 @@ h1{
 }
 
 footer{
+    display: none;
     margin: 2rem;
 }
 
