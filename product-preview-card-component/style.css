@@ -90,11 +90,32 @@
     justify-content: center;
   }
 
+  article{
+    width: 343px;
+    height: 611px;
+  }
+
   @media (min-width: 90rem) {
     article{
         display: flex;
         justify-content: center;
-        
+        width: 37.5rem;
+        height: 28.125rem;
+    }
+
+    /* .product__img{
+        flex: 1;
+    } */
+    .product__content{
+        flex: 1;
+    }
+
+    .product__title{
+        margin: 1.25rem 0 1.5rem 0;
+      }
+
+    .flex-group{
+        margin: 1.8125rem 0 1.875rem 0;
     }
   }
 
@@ -104,11 +125,14 @@
     
     margin: 1.75rem 1rem;
   }
-
   .product__content{
     background-color: var(--clr-lighter);
 
     padding: 1.5rem;
+  }
+
+  .product__img{
+    height: 240px;
   }
 
   .product__category{
