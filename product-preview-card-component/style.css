@@ -80,6 +80,7 @@
   body{
     font-family: 'Montserrat', sans-serif;
     font-size: var(--fs-normal);
+    line-height: 1.4375rem;
     color: var(--clr-light);
 
     background-color: var(--clr-background);
@@ -121,7 +122,10 @@
     font-family: 'Fraunces', sans-serif;
     font-weight: var(--fw-bold);
     font-size: var(--fs-bigger);
+    line-height: 2rem;
     color: var(--clr-dark);
+
+    margin: 0.75rem 0 1rem 0;
   }
 
   .product__price{
@@ -142,6 +146,7 @@
     display: flex;
     align-items: center;
     gap: 1.1875rem;
+    margin: 1.5rem 0 1.25rem 0;
   }
 
   .button{
