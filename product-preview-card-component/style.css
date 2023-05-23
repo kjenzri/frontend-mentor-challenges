@@ -63,6 +63,7 @@
 
     --clr-background: hsl(30, 38%, 92%);
     --clr-button: hsl(158, 36%, 37%);
+    --clr-button-hover:  hsl(158, 42%, 18%);
     --clr-dark: hsl(212, 21%, 14%);
     --clr-light: hsl(228, 12%, 48%);
     --clr-lighter: hsl(0, 0%, 100%);
@@ -160,4 +161,9 @@
     justify-content: center;
     align-items: center;
     gap: 0.725625rem;
+  }
+
+  .button:hover{
+    background-color: var(--clr-button-hover);
+    cursor: pointer;
   }
