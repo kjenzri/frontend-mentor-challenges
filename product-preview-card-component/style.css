@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&display=swap');
+
+
 /*CSS reset from https://www.joshwcomeau.com/css/custom-css-reset/ */
 /*
   1. Use a more-intuitive box-sizing model.
@@ -50,4 +54,102 @@
   */
   #root, #__next {
     isolation: isolate;
+  }
+
+  /*General Styling*/
+  :root{
+    --desktop-width: 90rem;
+    --mobile-width: 23.4375rem;
+
+    --clr-background: hsl(30, 38%, 92%);
+    --clr-button: hsl(158, 36%, 37%);
+    --clr-dark: hsl(212, 21%, 14%);
+    --clr-light: hsl(228, 12%, 48%);
+    --clr-lighter: hsl(0, 0%, 100%);
+
+    --fs-smaller: 0.75rem;
+    --fs-medium: 0.8125rem;
+    --fs-normal: 0.875rem;
+    --fs-bigger: 2rem;
+
+    --fw-normal: 500;
+    --fw-bold: 700;
+  }
+
+  body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--fs-normal);
+    color: var(--clr-light);
+
+    background-color: var(--clr-background);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product{
+    overflow: hidden;
+    border-radius: 0.625rem;
+    
+    margin: 1.75rem 1rem;
+  }
+
+  .product__content{
+    background-color: var(--clr-lighter);
+
+    padding: 1.5rem;
+  }
+
+  .product__category{
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-smaller);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .product__title{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-bigger);
+    color: var(--clr-dark);
+  }
+
+  .product__price{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-bigger);
+    color: var(--clr-button);
+  }
+
+  .product__original-price{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-medium);
+    text-decoration: line-through;
+  }
+
+  .flex-group{
+    display: flex;
+    align-items: center;
+    gap: 1.1875rem;
+  }
+
+  .button{
+    color: var(--clr-lighter);
+    background-color: var(--clr-button);
+
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--fs-normal);
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.725625rem;
   }
