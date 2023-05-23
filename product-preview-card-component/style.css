@@ -88,6 +88,14 @@
     justify-content: center;
   }
 
+  @media (min-width: 90rem) {
+    article{
+        display: flex;
+        justify-content: center;
+        
+    }
+  }
+
   .product{
     overflow: hidden;
     border-radius: 0.625rem;
