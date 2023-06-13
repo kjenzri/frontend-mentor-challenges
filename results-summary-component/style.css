@@ -165,6 +165,19 @@ main{
     justify-content: space-between;
 }
 
+.summary__button{
+  padding: 1rem;
+  border-radius: 8rem;
+  border: none;
+
+  color: var(--clr-neutral-000);
+  font-family: var(--ff-base);
+  font-size: var(--fs-bigger);
+  font-weight: var(--fw-bold);
+
+  background-color: var(--clr-neutral-300);
+}
+
 /* .summary__category{
   display: inline;
 }
