@@ -91,11 +91,14 @@ body{
 
   display: grid;
   place-content: center;
+
+  background-color: black;
 }
 
 main{
-  max-width: 24rem;
-  max-height: 51rem;  
+  max-width: 23rem;
+  max-height: 51rem;
+  background-color: var(--clr-neutral-000);
 }
 
 .result{
@@ -152,17 +155,65 @@ main{
   color: var(--clr-neutral-300);
 }
 
-.summary > article{
+.summary__detail{
   border-radius: 0.75rem;
-  background: linear-gradient(0deg, 
-    rgba(255, 255, 255, 0.95), 
-    rgba(255, 255, 255, 0.95)), 
-    #FF5555;
-  
-    padding: 1rem;
+  padding: 1rem;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary__detail[data-summary-category="reaction"]{
+  background: linear-gradient(0deg, 
+  rgba(255, 255, 255, 0.95), 
+  rgba(255, 255, 255, 0.95)), 
+  var(--clr-primary-000);
+}
+
+.summary__detail[data-summary-category="memory"]{
+  background: linear-gradient(0deg, 
+  rgba(255, 255, 255, 0.95), 
+  rgba(255, 255, 255, 0.95)), 
+  var(--clr-primary-100);
+}
+
+.summary__detail[data-summary-category="verbal"]{
+  background: linear-gradient(0deg, 
+  rgba(255, 255, 255, 0.95), 
+  rgba(255, 255, 255, 0.95)), 
+  var(--clr-primary-200);
+}
+
+.summary__detail[data-summary-category="visual"]{
+  background: linear-gradient(0deg, 
+  rgba(255, 255, 255, 0.95), 
+  rgba(255, 255, 255, 0.95)), 
+  var(--clr-primary-300);
+}
+
+.summary__detail__category::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.75rem 0 0;
+}
+
+.summary__detail[data-summary-category="reaction"] .summary__detail__category::before{
+  background-image: url(assets/images/icon-reaction.svg);
+}
+
+.summary__detail[data-summary-category="memory"] .summary__detail__category::before{
+  background-image: url(assets/images/icon-memory.svg);
+}
+
+.summary__detail[data-summary-category="verbal"] .summary__detail__category::before{
+  background-image: url(assets/images/icon-verbal.svg);
+}
+
+.summary__detail[data-summary-category="visual"] .summary__detail__category::before{
+  background-image: url(assets/images/icon-visual.svg);
 }
 
 .summary__button{
