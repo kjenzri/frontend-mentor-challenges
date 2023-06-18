@@ -3,7 +3,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
     fetch('./data.json')
         .then(response => response.json())
         .then(json => {
+            let sum = 0;
             json.forEach(element => {
+                sum += element.score;
+
                 let article = document.createElement("article");
                 article.classList.add("summary__details__detail");
                 article.setAttribute("data-summary-category", element.category.toLowerCase());
@@ -25,6 +28,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
                 article.appendChild(score);
                 summaryDetailsDiv.append(article);
             });
+
+            let valueSpan = document.querySelector(".result__score__value");
+            valueSpan.append(Math.floor(sum / json.length));
         })
         .then(() =>{
             let main = document.querySelector("main");
