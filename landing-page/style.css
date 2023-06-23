@@ -88,6 +88,8 @@ p, h1, h2, h3, h4, h5, h6 {
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-bold: 700;
+
+  --padding-left-right: 18rem;
 }
 
 
@@ -99,11 +101,27 @@ body{
   justify-items: center;
 }
 
+h1, h2, h3{
+  color: var(--clr-primary-100);
+}
+
+h1{
+  font-size: var(--fs-500);
+}
+
+p{
+  font-size: var(--fs-100);
+  font-weight: var(--fw-regular);
+  color: var(--clr-primary-100);
+  opacity: 0.5;
+}
+
 .header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  padding: 3.5rem 10rem;
+  padding: 3.5rem var(--padding-left-right);
 
   width: 100%;
 }
@@ -118,6 +136,8 @@ body{
   justify-content: space-around;
   gap: 2rem;
 
+  padding-inline-start: 0;
+
   list-style-type: none;
 
   font-size: var(--fs-000);
@@ -127,7 +147,31 @@ body{
 
 .button-get-started{
   color: var(--clr-neutral-300);
+  font-size: var(--fs-000);
+  font-weight: var(--fw-bold);
 
   border: none;
+  border-radius: 100vw;/* check if it's a good idea*/
   background-color: var(--clr-primary-000);
+
+  padding: 0.75rem 1.75rem;
+
+  box-shadow: 0rem 0.25rem 0.25rem hsla(0, 0%, 0%, 0.25);
+}
+
+.bring{/*naming*/
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+
+  padding: 3.5rem var(--padding-left-right);
+}
+
+.flex-wrapper{
+  display: flex;
+
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
 }
