@@ -250,3 +250,24 @@ p{
   text-align: center;
   line-height: var(--height);
 }
+.what2{ /* rename */
+ text-align: center;
+}
+
+.avatar{
+  width: 33.75rem;
+
+  background-color: #FAFAFA;
+}
+
+.avatar-flex-wrapper{
+  display: flex;
+  gap: 1.75rem;
+}
+
+.avatar > img{
+  width: 4.5rem;
+  height: 4.5rem;
+
+  margin: auto;
+}
