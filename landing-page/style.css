@@ -74,6 +74,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --clr-gradiant-100: hsl(241, 81%, 54%);
   --clr-gradiant-200: hsla(256, 72%, 46%, 1);
   --clr-gradiant-300: hsla(241, 72%, 46%, 0);
+  --clr-gradient-400: hsla(12, 88%, 59%, 0.5);
 
   --ff-base: 'Be Vietnam Pro', sans-serif;
 
@@ -170,7 +171,7 @@ p{
 
   padding: 0.75rem 1.75rem;
 
-  box-shadow: 0rem 0.25rem 0.25rem hsla(0, 0%, 0%, 0.25);
+  box-shadow: 0rem 0.3rem 0.8rem var(--clr-gradient-400);
 }
 
 .bring{/*naming*/
@@ -202,7 +203,7 @@ p{
   grid-template-columns: 1fr 1fr;
   column-gap: 8rem;
 
-  padding: 3.5rem var(--padding-left-right);
+  padding: 9rem var(--padding-left-right);
 }
 
 .flex-wrapper > p {
@@ -255,19 +256,34 @@ p{
 }
 
 .avatar{
-  width: 33.75rem;
+  --avatar-width: 33.75rem;
+  position: relative;
+  width: var(--avatar-width);
+  height: 13.75rem;
+
+  padding: 3.75rem 2.5rem 2.5rem 2.5rem;
 
   background-color: #FAFAFA;
+
+  
 }
 
 .avatar-flex-wrapper{
   display: flex;
   gap: 1.75rem;
+
+  padding: 6.5rem 0 3.75rem 0;
 }
 
 .avatar > img{
-  width: 4.5rem;
-  height: 4.5rem;
+  --avatar-img-width: 4.5rem;
+  --avatar-img-height: 4.5rem;
+  position: absolute;
+  top:calc(-1 * var(--avatar-img-height) / 2);
+  left: calc(var(--avatar-width) / 2 - var(--avatar-img-width) / 2);
+
+  width: var(--avatar-img-width);
+  height: var(--avatar-img-height);
 
   margin: auto;
 }
