@@ -60,7 +60,7 @@ p, h1, h2, h3, h4, h5, h6 {
 :root{
   --clr-primary-000: hsl(12, 88%, 59%);
   --clr-primary-100: hsl(228, 39%, 23%);
-  /* --clr-primary-200: hsl(166, 100%, 37%); */
+  --clr-primary-200: hsl(228, 13%, 13%);
   /* --clr-primary-300: hsl(234, 85%, 45%); */
 
   --clr-neutral-000: hsl(227, 12%, 61%);
@@ -170,6 +170,8 @@ p{
   background-color: var(--clr-primary-000);
 
   padding: 0.75rem 1.75rem;
+
+  min-width: 8.5rem;
 
   box-shadow: 0rem 0.3rem 0.8rem var(--clr-gradient-400);
 }
@@ -286,4 +288,41 @@ p{
   height: var(--avatar-img-height);
 
   margin: auto;
+}
+
+.simplify{
+  margin-top: 11.25rem;
+  padding: 3.88rem 10.06rem 3.88rem 10.31rem;
+
+  min-height: 13.75rem;
+
+  display: flex;
+  gap: 40rem;
+  align-items: center;
+
+  background-color: var(--clr-primary-000);
+}
+
+.simplify h2{
+  color: var(--clr-neutral-300);
+}
+
+.simplify .button-get-started{
+  color: var(--clr-primary-000);
+
+  background-color: var(--clr-neutral-300);
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  color: var(--clr-neutral-300);
+
+  padding: 3.8rem 10.5rem;
+
+  width: 100%;
+
+  background-color: var(--clr-primary-200);
 }
