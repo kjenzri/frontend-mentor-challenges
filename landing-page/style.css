@@ -91,7 +91,9 @@ p, h1, h2, h3, h4, h5, h6 {
   --fw-medium: 500;
   --fw-bold: 700;
 
-  --padding-left-right: 15rem;
+  --padding-left-right: 10.31rem;
+
+  --content-max-width: 90rem;
 }
 
 
@@ -101,6 +103,14 @@ body{
   font-size: var(--fs-100);
   display: grid;
   justify-items: center;
+
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: 500px;
+}
+
+main{
+  max-width: var(--content-max-width);
 }
 
 h1, h2, h3{
@@ -139,6 +149,7 @@ p{
   padding: 3.5rem var(--padding-left-right);
 
   width: 100%;
+  max-width: var(--content-max-width);
 }
 
 .logo{
@@ -324,6 +335,7 @@ p{
 
   width: 100%;
   max-height: 16rem;
+  max-width: var(--content-max-width);
 
   background-color: var(--clr-primary-200);
 }
