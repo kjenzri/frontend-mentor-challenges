@@ -103,10 +103,13 @@ body{
   font-size: var(--fs-100);
   display: grid;
   justify-items: center;
+}
 
+.wrapper{
   background-image: url(./images/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
-  background-position: 500px;
+  background-position-x: 800px;
+  background-position-y: -200px;
 }
 
 main{
@@ -189,15 +192,20 @@ p{
 
 .bring{/*naming*/
   display: grid;
-
-  grid-template-columns: 1fr 1fr;
-  column-gap: 8rem;
+  grid-template-columns: 1fr auto;
 
   padding: 3.5rem var(--padding-left-right);
 }
 
 .bring p {
-  padding-right: 11rem;
+  line-height: 1.625rem;
+
+  width: 21.875rem;
+}
+
+.bring img{
+  width: 33.75rem;
+  height: 30.3125rem;
 }
 
 .flex-wrapper{
@@ -205,7 +213,7 @@ p{
 
   flex-direction: column;
   align-items: start;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   padding: 2rem 0;
 }
@@ -217,11 +225,13 @@ p{
   column-gap: 8rem;
 
   padding: 9rem var(--padding-left-right);
+
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position-x: -300px;
+  background-position-y: 500px;
 }
 
-.flex-wrapper > p {
-  padding-right: 11rem;
-}
 
 .what ol li p{
   line-height: 26px;
