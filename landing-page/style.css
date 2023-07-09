@@ -274,11 +274,11 @@ p{
   width: var(--avatar-width);
   height: 13.75rem;
 
+  flex-shrink: 0;
+
   padding: 3.75rem 2.5rem 2.5rem 2.5rem;
 
   background-color: #FAFAFA;
-
-  
 }
 
 .avatar-flex-wrapper{
@@ -286,6 +286,8 @@ p{
   gap: 1.75rem;
 
   padding: 6.5rem 0 3.75rem 0;
+
+  overflow: auto;
 }
 
 .avatar > img{
