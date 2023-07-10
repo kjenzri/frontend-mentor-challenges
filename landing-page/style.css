@@ -218,6 +218,13 @@ p{
   padding: 2rem 0;
 }
 
+.wrapper-what{
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position-x: -470px;
+  background-position-y: 450px;
+}
+
 .what{/*naming + factorize*/
   display: grid;
 
@@ -225,11 +232,6 @@ p{
   column-gap: 8rem;
 
   padding: 9rem var(--padding-left-right);
-
-  background-image: url(./images/bg-tablet-pattern.svg);
-  background-repeat: no-repeat;
-  background-position-x: -300px;
-  background-position-y: 500px;
 }
 
 
