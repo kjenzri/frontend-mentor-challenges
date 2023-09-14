@@ -1,60 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink" width="580" height="525">
-    <defs>
-        <filter id="c" width="126.9%" height="129.8%" x="-13.5%" y="-10.6%" filterUnits="objectBoundingBox">
-            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
-            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.311765745 0 0 0 0 0.336514196 0 0 0 0 0.386011096 0 0 0 0.03 0"/>
-        </filter>
-        <filter id="e" width="126.9%" height="129.8%" x="-13.5%" y="-10.6%" filterUnits="objectBoundingBox">
-            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
-            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.311765745 0 0 0 0 0.336514196 0 0 0 0 0.386011096 0 0 0 0.03 0"/>
-        </filter>
-        <filter id="i" width="126.9%" height="129.8%" x="-13.5%" y="-10.6%" filterUnits="objectBoundingBox">
-            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
-            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.311765745 0 0 0 0 0.336514196 0 0 0 0 0.386011096 0 0 0 0.03 0"/>
-        </filter>
-        <rect id="d" width="260" height="235" x="0" y="0" rx="4"/>
-        <rect id="f" width="260" height="235" x="0" y="0" rx="4"/>
-        <rect id="j" width="260" height="235" x="0" y="0" rx="4"/>
-        <ellipse id="a" cx="81.039" cy="81.034" rx="81.039" ry="81.034"/>
-        <ellipse id="b" cx="81.039" cy="81.034" rx="81.039" ry="81.034"/>
-        <mask id="g" width="162.078" height="162.069" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
-            <use xlink:href="#a"/>
-        </mask>
-        <mask id="h" width="162.078" height="162.069" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
-            <use xlink:href="#b"/>
-        </mask>
-    </defs>
-    <g fill="none" fill-rule="evenodd" transform="translate(20 10)">
-        <use fill="#000" filter="url(#c)" xlink:href="#d"/>
-        <use fill="#FFF" xlink:href="#d"/>
-        <path fill="#FAFAFA" stroke="#E5E9EA" d="M16.208 16.207h230.286v202.586H16.208z"/>
-        <path fill="#E5E9EA" d="M16.208 117.5h230.286v1H16.208zM16.208 136.493h230.286v1H16.208zM16.208 155.485h230.286v1H16.208zM16.208 174.477h230.286v1H16.208zM16.208 41.53h230.286v1H16.208zM16.208 22.538h230.286v1H16.208zM16.208 60.523h230.286v1H16.208zM16.208 79.515h230.286v1H16.208zM16.208 98.508h230.286v1H16.208zM16.208 193.47h230.286v1H16.208zM16.208 212.462h230.286v1H16.208z"/>
-        <path fill="#242D52" d="M22.286 117.5h31.065v45.647a5 5 0 01-5 5H27.286a5 5 0 01-5-5V117.5z"/>
-        <path fill="#F3603C" d="M22.286 117.5h31.065v32.985a5 5 0 01-5 5H27.286a5 5 0 01-5-5V117.5zM69.558 117.234h31.065V82.658a5 5 0 00-5-5H74.558a5 5 0 00-5 5v34.576z"/>
-        <path fill="#242D52" d="M69.558 117.234h31.065v51.99a5 5 0 01-5 5H74.558a5 5 0 01-5-5v-51.99zM162.078 117.5h31.065V46.193a5 5 0 00-5-5h-21.065a5 5 0 00-5 5V117.5z"/>
-        <path fill="#F3603C" d="M162.078 117.5h31.065V65.27a5 5 0 00-5-5h-21.065a5 5 0 00-5 5v52.23z"/>
+    <g fill="none" fill-rule="evenodd">
         <g>
-            <path fill="#242D52" d="M209.351 117.5h31.065v58.477a5 5 0 01-5 5H214.35a5 5 0 01-5-5V117.5z"/>
-            <path fill="#F3603C" d="M209.351 117.5h31.065v45.782a5 5 0 01-5 5H214.35a5 5 0 01-5-5V117.5z"/>
-        </g>
-        <g>
-            <path fill="#F3603C" d="M115.481 117.5h31.065v90.216a5 5 0 01-5 5H120.48a5 5 0 01-5-5V117.5z"/>
-            <path fill="#242D52" d="M115.481 117.5h31.065v33.086a5 5 0 01-5 5H120.48a5 5 0 01-5-5V117.5z"/>
-        </g>
-        <g transform="translate(280)">
-            <use fill="#000" filter="url(#e)" xlink:href="#f"/>
-            <use fill="#FFF" xlink:href="#f"/>
-            <g transform="translate(49.299 36.466)">
-                <ellipse cx="81.039" cy="81.034" stroke="#FFF" stroke-width="40" rx="61.039" ry="61.034"/>
-                <use stroke="#F3603C" stroke-dasharray="502" stroke-width="80" mask="url(#g)" xlink:href="#a"/>
-                <use stroke="#242D52" stroke-dasharray="340" stroke-width="80" mask="url(#h)" xlink:href="#b"/>
-            </g>
-        </g>
-        <g transform="translate(140 250)">
             <use fill="#000" filter="url(#i)" xlink:href="#j"/>
             <use fill="#FFF" xlink:href="#j"/>
             <g transform="translate(16.208 140.46)">

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="580" height="525">
+    <defs>
+        <!--fig 2-->
+        <filter id="c" width="126.9%" height="129.8%" x="-13.5%" y="-10.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.311765745 0 0 0 0 0.336514196 0 0 0 0 0.386011096 0 0 0 0.03 0"/>
+        </filter>
+        <filter id="e" width="126.9%" height="129.8%" x="-13.5%" y="-10.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.311765745 0 0 0 0 0.336514196 0 0 0 0 0.386011096 0 0 0 0.03 0"/>
+        </filter>
+        <filter id="i" width="126.9%" height="129.8%" x="-13.5%" y="-10.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.311765745 0 0 0 0 0.336514196 0 0 0 0 0.386011096 0 0 0 0.03 0"/>
+        </filter>
+        <rect id="d" width="260" height="235" x="0" y="0" rx="4"/>
+        <rect id="f" width="260" height="235" x="0" y="0" rx="4"/>
+        <rect id="j" width="260" height="235" x="0" y="0" rx="4"/>
+        <ellipse id="a" cx="81.039" cy="81.034" rx="81.039" ry="81.034"/>
+        <ellipse id="b" cx="81.039" cy="81.034" rx="81.039" ry="81.034"/>
+        <mask id="g" width="162.078" height="162.069" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#a"/>
+        </mask>
+        <mask id="h" width="162.078" height="162.069" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#b"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <use fill="#000" filter="url(#e)" xlink:href="#f"/>
+            <use fill="#FFF" xlink:href="#f"/>
+            <g>
+                <ellipse cx="81.039" cy="81.034" stroke="#FFF" stroke-width="40" rx="61.039" ry="61.034"/>
+                <use stroke="#F3603C" stroke-dasharray="502" stroke-width="80" mask="url(#g)" xlink:href="#a"/>
+                <use stroke="#242D52" stroke-dasharray="340" stroke-width="80" mask="url(#h)" xlink:href="#b"/>
+            </g>
+        </g>
+    </g>
+</svg>
