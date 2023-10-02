@@ -192,7 +192,7 @@ p{
 
 .bring{/*naming*/
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr;
 
   padding: 3.5rem var(--padding-left-right);
 }
@@ -209,8 +209,7 @@ p{
   justify-content: center;
   gap: 1.25rem;
 
-  border-radius: 0.25rem;
-  box-shadow: 0px 10px 20px 0px rgba(80, 86, 98, 0.03);
+  border: 1px solid rebeccapurple;
 }
 
 .bring img{
