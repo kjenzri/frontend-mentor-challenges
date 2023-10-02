@@ -208,8 +208,6 @@ p{
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.25rem;
-
-  border: 1px solid rebeccapurple;
 }
 
 .bring img{
@@ -242,7 +240,7 @@ p{
   grid-template-columns: 1fr 1fr;
   column-gap: 8rem;
 
-  padding: 9rem var(--padding-left-right);
+  padding: 5rem var(--padding-left-right);
 }
 
 
@@ -254,6 +252,10 @@ p{
 .what .flex-wrapper {
   justify-content: start;
   gap: 2rem;
+}
+
+.what .flex-wrapper p {
+  width: 21rem;
 }
 
 .what ol {
@@ -273,6 +275,7 @@ p{
   position: absolute;
   
   left: calc(-1 * var(--width) - 1.75rem);
+  top: 5px;
   width: var(--width);
   height: var(--height);
   
@@ -285,7 +288,7 @@ p{
   border-radius: 100vh;
   
   text-align: center;
-  line-height: var(--height);
+  line-height: 2rem;
 }
 .what2{ /* rename */
  text-align: center;
