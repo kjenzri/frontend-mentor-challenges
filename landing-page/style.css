@@ -215,6 +215,7 @@ p{
   height: 14.6875rem;
   border-radius: 0.25rem;
   background: #FFF;
+  box-shadow: 0px 10px 20px 0px rgba(80, 86, 98, 0.03);
 }
 
 .flex-wrapper{
@@ -230,8 +231,8 @@ p{
 .wrapper-what{
   background-image: url(./images/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
-  background-position-x: -470px;
-  background-position-y: 450px;
+  background-position-x: -33rem;
+  background-position-y: 23rem;
 }
 
 .what{/*naming + factorize*/
@@ -312,8 +313,18 @@ p{
   gap: 1.75rem;
 
   padding: 6.5rem 0 3.75rem 0;
+  overflow-x: hidden;
+  /* scrollbar-gutter: stable both-edges; */
+  scrollbar-width: thin;
+}
 
-  overflow: auto;
+.avatar-flex-wrapper::-webkit-scrollbar{
+  height: 5px;
+  background-color: yellow;
+}
+
+.avatar-flex-wrapper:hover{
+  overflow-x: scroll;
 }
 
 .avatar > img{
