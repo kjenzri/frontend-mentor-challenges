@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+
+/*CSS reset from https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  /*general styling */
+
+  :root{
+    --clr-primary-000: hsl(273, 85%, 13%);
+    --clr-primary-100: hsl(150, 100%, 63%);
+    --clr-primary-200: hsl(271, 12%, 34%);
+
+    --clr-neutral-000: hsl(276, 100%, 99%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --ff-heading: 'Fraunces', serif;;
+    --ff-base: 'Manrope', sans-serif;
+  
+    --fs-000: 1.125rem;
+    --fs-100: 2rem;
+    --fs-200: 3.5rem;
+    --fs-300: 5rem;
+  
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+
+    --line-spacing-000: 2rem;
+    --line-spacing-100: 2.5rem;
+    --line-spacing-200: 4rem;
+    --line-spacing-300: 5rem;
+  }
+
+  body{
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-000);
+    display: grid;
+    justify-items: center;
+  }
