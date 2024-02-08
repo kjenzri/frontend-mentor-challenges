@@ -89,4 +89,56 @@
     font-size: var(--fs-000);
     display: grid;
     justify-items: center;
+
+    background-color: antiquewhite;
+  }
+
+  header{
+    width: 100%;
+
+    background-color: var(--clr-primary-000);
+
+    color: var(--clr-neutral-100);
+  }
+
+  .logo{
+    width: 6rem;
+    height: 1.5rem;
+  }
+
+  h1{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-semi-bold);
+    line-height: var(--line-spacing-300);
+  }
+  h2{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-200);
+    font-weight: var(--fw-semi-bold);
+    line-height: var(--line-spacing-200);
+  }
+  h3{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-100);
+    font-weight: var(--fw-semi-bold);
+    line-height: var(--line-spacing-100);
+  }
+  button{
+    font-family: var(--ff-base);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-000);
+    color: var(--clr-primary-000);
+
+    background: var(--clr-primary-100);
+    padding: 1rem 2rem;
+
+    border: 1px;
+    border-style: solid;
+  }
+
+  button:hover{
+    color: var(--clr-primary-100);
+    background: var(--clr-primary-000);
+    border-color: var(--clr-primary-100);
   }
