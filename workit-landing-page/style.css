@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
 
 
 /*CSS reset from https://www.joshwcomeau.com/css/custom-css-reset/ */
@@ -76,6 +76,7 @@
   
     --fw-regular: 400;
     --fw-semi-bold: 600;
+    --fw-bold: 800;
 
     --line-spacing-000: 2rem;
     --line-spacing-100: 2.5rem;
@@ -95,6 +96,8 @@
 
   header{
     width: 100%;
+
+    /* padding: 3.5rem 10rem; */
 
     background-color: var(--clr-primary-000);
 
@@ -126,7 +129,7 @@
   }
   button{
     font-family: var(--ff-base);
-    font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-bold);
     font-size: var(--fs-000);
     color: var(--clr-primary-000);
 
@@ -141,4 +144,40 @@
     color: var(--clr-primary-100);
     background: var(--clr-primary-000);
     border-color: var(--clr-primary-100);
+    cursor: pointer;
+  }
+
+  a, a:visited{
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-semi-bold);
+
+    text-decoration: none;
+    border-bottom: 3px solid var(--clr-primary-100);
+  }
+
+  a:hover{
+    color: var(--clr-primary-100);
+  }
+
+  .header-top{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 3rem 10rem 2rem 10rem;
+  }
+
+  .header-main{
+    display: grid;
+    max-width: 40rem;
+    grid-template-rows: auto auto;
+    row-gap: 2.5rem;
+    margin: auto;
+    justify-items: center;
+    text-align: center;
+  }
+
+  em{
+    font-style: normal;
+    border-bottom: 3px solid var(--clr-primary-100);
+    display: inline-block;
   }
