@@ -159,6 +159,12 @@
     color: var(--clr-primary-100);
   }
 
+  em{
+    font-style: normal;
+    border-bottom: 3px solid var(--clr-primary-100);
+    display: inline-block;
+  }
+
   .header-top{
     display: flex;
     justify-content: space-between;
@@ -176,8 +182,8 @@
     text-align: center;
   }
 
-  em{
-    font-style: normal;
-    border-bottom: 3px solid var(--clr-primary-100);
-    display: inline-block;
+  .hero-image{
+    margin: auto;
+    width: 776px;
+    height: 400px;
   }
