@@ -104,6 +104,10 @@
     color: var(--clr-neutral-100);
   }
 
+  main{
+    width: 100%;
+  }
+
   .logo{
     width: 6rem;
     height: 1.5rem;
@@ -183,7 +187,19 @@
   }
 
   .hero-image{
-    margin: auto;
+    margin: 3rem auto;
     width: 776px;
     height: 400px;
+  }
+
+  .main-top{
+    padding: 5rem;
+
+    background-color: var(--clr-neutral-000);
+    color: var(--clr-primary-000);
+  }
+
+  .main-top ol {
+    display: flex;
+    text-align: center;
   }
