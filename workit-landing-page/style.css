@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
 
 
@@ -177,6 +177,8 @@
   }
 
   .header-main{
+    position: relative;
+
     display: grid;
     max-width: 40rem;
     grid-template-rows: auto auto;
@@ -184,16 +186,37 @@
     margin: auto;
     justify-items: center;
     text-align: center;
+    padding-bottom: 10rem;
   }
 
+  /* header::before {
+    border-radius: 100%;    
+    position: absolute;
+    background: var(--clr-primary-000);
+    right: -800px;
+    left: -800px;
+    top: -800px;
+    
+    content: '';
+    bottom: 0;
+  } */
+
   .hero-image{
+    position: absolute;
+    top: 17rem;
+    left: 3rem;
+
     margin: 3rem auto;
     width: 776px;
     height: 400px;
   }
 
   .main-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5rem;
+    min-height: 56rem;
 
     background-color: var(--clr-neutral-000);
     color: var(--clr-primary-000);
@@ -203,3 +226,79 @@
     display: flex;
     text-align: center;
   }
+  .main-top ol h3 {
+    margin: 2rem;
+  }
+
+
+  .main-top ol p {
+    margin: 2rem;
+    max-width: 22rem;
+  }
+
+  .main-top li::marker {
+    content: "";
+  }
+
+  .main-top li::before {
+    content: counter(list-item);
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    display: inline-block;
+    font-family: var(--ff-heading);
+    font-size: 1.5rem;
+    font-weight: var(--fw-semi-bold);
+
+    padding: 0.5rem;
+  }
+
+  .main-bottom{
+    background-color: var(--clr-neutral-100);    
+    position: relative;
+    height: 45rem;
+  }
+
+  .main-bottom img{
+    width: 30rem;
+    height: 30rem;
+    
+    position: absolute;
+    top: 5rem;
+    left: 10rem;
+  }
+
+  .main-bottom-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+
+    position: absolute;
+    top: 15rem;
+    left: 34rem;
+    
+
+    background-color: var(--clr-primary-000);
+
+    color: var(--clr-neutral-100);
+    
+    min-height: 26rem;
+    max-width: 46rem;
+    padding: 4rem;
+  }
+
+  .main-bottom-wrapper h2{
+    font-weight: var(--fw-semi-bold);
+
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+  }
+
+  
