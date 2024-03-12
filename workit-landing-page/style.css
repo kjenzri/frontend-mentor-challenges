@@ -8,8 +8,6 @@
   src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("woff2-variations");
   font-weight: 400, 600, 800;
 }
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
-
 
 /*CSS reset from https://www.joshwcomeau.com/css/custom-css-reset/ */
 /*
@@ -100,7 +98,7 @@
     display: grid;
     justify-items: center;
 
-    background-color: antiquewhite;
+    background-color: black;
   }
 
   header{
@@ -283,7 +281,7 @@
   .main-bottom{
     background-color: var(--clr-neutral-100);
     
-    height: 45rem;
+    min-height: 45rem;
 
     display: grid;
     justify-items: center;
@@ -322,8 +320,8 @@
 
     color: var(--clr-neutral-100);
     
-    min-height: 26rem;
-    max-width: 46rem;
+    /* min-height: 26rem; */
+    /* max-width: 46rem; */
     padding: 4rem;
   }
 
@@ -338,5 +336,9 @@
     "SOFT" 0,
     "WONK" 0;
   } */
+
+  header, main, footer{
+    max-width: 90rem;
+  }
 
   
