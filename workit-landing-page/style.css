@@ -98,14 +98,12 @@
     display: grid;
     justify-items: center;
 
-    background-color: black;
+    background-color: var(--clr-neutral-100);
   }
 
   header{
     width: 100%;
     position: relative;
-
-    /* padding: 3.5rem 10rem; */
 
     background-color: var(--clr-primary-000);
     color: var(--clr-neutral-100);
@@ -114,10 +112,13 @@
     grid-template-rows: auto auto auto;
     justify-items: center;
     align-items: center;
+
   }
 
   main{
     width: 100%;
+
+    background-color: var(--clr-neutral-000);
   }
 
   .logo{
@@ -167,7 +168,7 @@
     cursor: pointer;
   }
 
-  a, a:visited{
+  .header_anchor, .header_anchor:visited{
     color: var(--clr-neutral-100);
     font-weight: var(--fw-semi-bold);
 
@@ -175,7 +176,7 @@
     border-bottom: 3px solid var(--clr-primary-100);
   }
 
-  a:hover{
+  .header_anchor:hover{
     color: var(--clr-primary-100);
   }
 
@@ -213,7 +214,7 @@
     margin: auto;
     justify-items: center;
     text-align: center;
-    padding-bottom: 10rem;
+    padding-bottom: 19rem;
 
     overflow: hidden;
   }
@@ -224,13 +225,13 @@
 
   .background-pattern-1-image{
     position: absolute;
-    left: -10rem;
+    left: -8rem;
   }
 
   .background-pattern-2-image{
     position: absolute;
     right: -3rem;
-    bottom: 0rem;
+    bottom: 13rem;
   }
 
   .hero-image{
@@ -247,24 +248,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
-    min-height: 56rem;
-
-    background-color: var(--clr-neutral-000);
+    padding: 16rem 10rem 10rem 10rem;
     color: var(--clr-primary-000);
   }
 
   .main-top ol {
     display: flex;
     text-align: center;
+    justify-content: space-evenly;
+
+    padding: 0rem;
   }
   .main-top ol h3 {
     margin: 2rem;
   }
 
 
-  .main-top ol p {
-    margin: 2rem;
+  .main-top ol li {
     max-width: 22rem;
   }
 
@@ -297,6 +297,8 @@
     display: grid;
     justify-items: center;
     align-items: center;
+
+    padding: 6rem 0;
   }
 
   .main-bottom-wrapper{    
@@ -311,16 +313,12 @@
   .founder-image{
     width: 30rem;
     height: 30rem;
-    
-    position: absolute;
-    top: 5rem;
-    left: 0rem;
   }
 
   .background-pattern-3-image{
     position: absolute;
-    bottom: 0rem;
-    right: 0rem;
+    bottom: -6rem;
+    right: 5rem;
   }
 
   .main-bottom-text-wrapper{
@@ -331,8 +329,11 @@
     gap: 2rem;
 
     position: absolute;
-    top: 16rem;
-    left: 24rem;    
+    top: 10rem;
+    left: 24rem;
+    
+    max-width: 45rem;
+    min-width: 30rem;
 
     background-color: var(--clr-primary-000);
 
@@ -343,6 +344,15 @@
   .social-media-wrapper{
     display: flex;
     gap: 2rem;
+  }
+
+  .footer_anchor{
+    fill: currentColor;
+    color: var(--clr-primary-200);
+  }
+  .footer_anchor:hover{    
+    fill: currentColor;
+    color: var(--clr-primary-000);
   }
 
   header, main, footer{
