@@ -397,3 +397,76 @@
   header, main, footer{
     max-width: 90rem;
   }
+
+  @media (max-width: 48rem){
+
+    :root{
+      --fs-000: 1rem;
+      --fs-100: 1.25rem;
+      --fs-200: 2rem;
+      --fs-300: 3.5rem;
+    }
+
+    button {
+      padding: 1rem 1.25rem;
+  }
+
+    .header-main h1 {
+      max-width: 25rem;
+    }
+
+    em {
+      font-style: normal;
+      border-bottom: none;
+      display: inline;
+      text-decoration: underline solid var(--clr-primary-100);
+      text-decoration-thickness: 3px;
+      text-underline-offset: 00.5rem;
+    }
+
+    .main-top ol {
+      display: flex;
+      text-align: center;
+      justify-content: space-evenly;
+      padding: 0rem;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-image{
+      width: 514px;
+      height: 296px;
+
+      margin: 1.5rem 1rem 1rem 5rem
+    }
+
+    header, main, footer{
+      max-width: inherit;
+    }
+
+    .header-top {
+      padding: 3rem 2rem 2rem 2rem;
+    }
+
+    .header-main {      
+      row-gap: 2rem;
+      padding-bottom: 12rem;
+    }
+
+    .background-pattern-1-image {
+      left: -14rem;
+      top: -1rem;
+    }
+
+    .background-pattern-2-image {
+      right: -6rem;
+      bottom: 6rem;
+      z-index: 1;
+    }
+
+    .bottom-curved-border::before {
+      left: -50%;
+      width: 200%;
+    }
+
+  }
