@@ -119,6 +119,7 @@
     width: 100%;
 
     background-color: var(--clr-neutral-000);
+
   }
 
   .logo{
@@ -242,9 +243,47 @@
     margin: 3rem auto;
     width: 776px;
     height: 400px;
+
+    z-index: 1;
+  }
+
+  .bottom-curved-border{
+    height: 150px;
+    width: 100%;
+
+    overflow: hidden;
+
+    background-color: var(--clr-neutral-000);
+
+    position: absolute;
+    bottom: 0;
+  }
+
+  .bottom-curved-border::before{
+    position: absolute;
+    content: "";
+
+    background-color: var(--clr-primary-000);
+
+    top: -150px;
+    left: -10%;
+    
+    width: 120%;
+    height: 300px;
+
+    border-radius: 50% 50%;
+  }
+
+  .main-top .bottom-curved-border{
+    background-color: var(--clr-neutral-100);
+  }
+
+  .main-top .bottom-curved-border::before{
+    background-color: var(--clr-neutral-000);
   }
 
   .main-top{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
