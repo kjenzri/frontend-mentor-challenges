@@ -537,3 +537,40 @@
       bottom: -3rem;
     }
   }
+
+  @media (max-width: 23rem){
+    :root{
+      --fs-300: 2rem;
+      --fs-400: 3.125rem;
+    }
+
+    .background-pattern-1-image, .background-pattern-2-image, .background-pattern-3-image{
+      visibility: collapse;
+    }
+
+    .hero-image{
+      width: 320x;
+      height: 184px;
+
+      margin: 1.5rem 1rem 1rem 5rem
+    }
+
+    .list-item-container{
+      flex-direction: column;
+    }
+
+    .list-item-container::before{
+      position: static;
+    }
+    .founder-image {
+      margin: auto;
+    }
+    .main-bottom-text-wrapper {
+      gap: 1.5rem;
+      top: 9rem;
+      margin: auto;
+      max-width: 22rem;
+      /* min-width: 20rem; */
+      padding: 2rem;
+    }
+  }
