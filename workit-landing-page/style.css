@@ -538,10 +538,15 @@
     }
   }
 
-  @media (max-width: 23rem){
+  @media (max-width: 24rem){
     :root{
       --fs-300: 2rem;
       --fs-400: 3.125rem;
+
+      --line-spacing-000: 1.4rem;
+      --line-spacing-100: 1.75rem;
+      --line-spacing-200: 2.8rem;
+      --line-spacing-300: 3.5rem;
     }
 
     .background-pattern-1-image, .background-pattern-2-image, .background-pattern-3-image{
@@ -549,7 +554,7 @@
     }
 
     .hero-image{
-      width: 320x;
+      width: 320px;
       height: 184px;
 
       margin: 1.5rem 1rem 1rem 5rem
