@@ -256,8 +256,8 @@ footer {
   margin: 0 auto;
 
   margin: 3rem auto;
-  width: 776px;
-  height: 400px;
+  width: 48.5rem;
+  height: 25rem;
 
   z-index: 1;
 }
@@ -454,8 +454,8 @@ footer {
   }
 
   .hero-image {
-    width: 514px;
-    height: 296px;
+    width: 32.125rem;
+    height: 18.5rem;
 
     margin: 1.5rem 1rem 1rem 5rem;
   }
@@ -578,8 +578,8 @@ footer {
   }
 
   .hero-image {
-    width: 320px;
-    height: 184px;
+    width: 20rem;
+    height: 11.5;
 
     margin: 1.5rem auto 1rem auto;
   }
