@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
 
 /*CSS reset from https://www.joshwcomeau.com/css/custom-css-reset/ */
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /*
@@ -17,7 +18,8 @@
 /*
   3. Allow percentage-based heights in the application
 */
-html, body {
+html,
+body {
   height: 100%;
 }
 /*
@@ -32,32 +34,46 @@ body {
 /*
   6. Improve media defaults
 */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 /*
   7. Remove built-in form typography styles
 */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 /*
   8. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 /*
   9. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 /*general styling */
 
-:root{
+:root {
   --clr-primary-000: hsl(12, 88%, 59%);
   --clr-primary-100: hsl(228, 39%, 23%);
   --clr-primary-200: hsl(228, 13%, 13%);
@@ -76,7 +92,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --clr-gradiant-300: hsla(241, 72%, 46%, 0);
   --clr-gradient-400: hsla(12, 88%, 59%, 0.5);
 
-  --ff-base: 'Be Vietnam', sans-serif;
+  --ff-base: "Be Vietnam", sans-serif;
 
   --fs-000: 0.8125rem;
   --fs-100: 1rem;
@@ -96,8 +112,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --content-max-width: 90rem;
 }
 
-
-body{
+body {
   font-family: var(--ff-base);
   font-weight: var(--fw-regular);
   font-size: var(--fs-100);
@@ -105,46 +120,48 @@ body{
   justify-items: center;
 }
 
-.wrapper{
+.wrapper {
   background-image: url(./images/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
   background-position-x: 800px;
   background-position-y: -200px;
 }
 
-main{
+main {
   max-width: var(--content-max-width);
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   color: var(--clr-primary-100);
   font-weight: var(--fw-bold);
 }
 
-h1{
+h1 {
   font-size: var(--fs-500);
   line-height: 4rem;
 }
 
-h2{
+h2 {
   font-size: var(--fs-450);
   line-height: 2.75rem;
 }
 
-h3{
+h3 {
   font-size: var(--fs-100);
   letter-spacing: -0.285714px;
   padding-top: 9px;
 }
 
-p{
+p {
   font-size: var(--fs-100);
   font-weight: var(--fw-regular);
   color: var(--clr-primary-100);
   opacity: 0.5;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -155,12 +172,12 @@ p{
   max-width: var(--content-max-width);
 }
 
-.logo{
+.logo {
   width: 9rem;
   height: 1.5rem;
 }
 
-.header > ul{
+.header > ul {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
@@ -174,13 +191,13 @@ p{
   color: var(--clr-primary-100);
 }
 
-.button-get-started{
+.button-get-started {
   color: var(--clr-neutral-300);
   font-size: var(--fs-000);
   font-weight: var(--fw-bold);
 
   border: none;
-  border-radius: 100vw;/* check if it's a good idea*/
+  border-radius: 100vw; /* check if it's a good idea*/
   background-color: var(--clr-primary-000);
 
   padding: 0.75rem 1.75rem;
@@ -191,7 +208,8 @@ p{
   box-shadow: 0rem 0.3rem 0.8rem var(--clr-gradient-400);
 }
 
-.bring{/*naming*/
+.bring {
+  /*naming*/
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -204,14 +222,14 @@ p{
   width: 21.875rem;
 }
 
-.illustration-flex{
+.illustration-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.25rem;
 }
 
-.bring img{
+.bring img {
   width: 16.25rem;
   height: 14.6875rem;
   border-radius: 0.25rem;
@@ -219,7 +237,7 @@ p{
   box-shadow: 0px 10px 20px 0px rgba(80, 86, 98, 0.03);
 }
 
-.flex-wrapper{
+.flex-wrapper {
   display: flex;
 
   flex-direction: column;
@@ -229,14 +247,15 @@ p{
   padding: 2rem 0;
 }
 
-.wrapper-what{
+.wrapper-what {
   background-image: url(./images/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
   background-position-x: -33rem;
   background-position-y: 23rem;
 }
 
-.what{/*naming + factorize*/
+.what {
+  /*naming + factorize*/
   display: grid;
 
   grid-template-columns: 1fr 1fr;
@@ -245,8 +264,7 @@ p{
   padding: 5rem var(--padding-left-right);
 }
 
-
-.what ol li p{
+.what ol li p {
   line-height: 26px;
   margin: 1.5rem 0 2.5rem 0;
 }
@@ -271,32 +289,33 @@ p{
 .what ol li::before {
   --width: 67px;
   --height: 39px;
-  
-  content: "0"counter(my-awesome-counter);
-  
+
+  content: "0" counter(my-awesome-counter);
+
   position: absolute;
-  
+
   left: calc(-1 * var(--width) - 1.75rem);
   top: 5px;
   width: var(--width);
   height: var(--height);
-  
+
   color: var(--clr-neutral-300);
   font-size: var(--fs-100);
   font-weight: var(--fw-bold);
-  
+
   background-color: var(--clr-primary-000);
   border: none;
   border-radius: 100vh;
-  
+
   text-align: center;
   line-height: 2rem;
 }
-.what2{ /* rename */
- text-align: center;
+.what2 {
+  /* rename */
+  text-align: center;
 }
 
-.avatar{
+.avatar {
   --avatar-width: 33.75rem;
   position: relative;
   width: var(--avatar-width);
@@ -309,7 +328,7 @@ p{
   background-color: var(--clr-neutral-300);
 }
 
-.avatar-flex-wrapper{
+.avatar-flex-wrapper {
   display: flex;
   gap: 1.75rem;
 
@@ -321,22 +340,22 @@ p{
   height: 23rem;
 }
 
-.avatar-flex-wrapper::-webkit-scrollbar{
+.avatar-flex-wrapper::-webkit-scrollbar {
   height: 10px;
   /* width: 10px; */
   background-color: var(--clr-neutral-300);
 }
 
-.avatar-flex-wrapper:hover{
+.avatar-flex-wrapper:hover {
   overflow-x: scroll;
   scrollbar-gutter: stable both-edges;
 }
 
-.avatar > img{
+.avatar > img {
   --avatar-img-width: 4.5rem;
   --avatar-img-height: 4.5rem;
   position: absolute;
-  top:calc(-1 * var(--avatar-img-height) / 2);
+  top: calc(-1 * var(--avatar-img-height) / 2);
   left: calc(var(--avatar-width) / 2 - var(--avatar-img-width) / 2);
 
   width: var(--avatar-img-width);
@@ -345,7 +364,7 @@ p{
   margin: auto;
 }
 
-.simplify{
+.simplify {
   margin-top: 11.25rem;
   padding: 3.88rem 10.06rem 3.88rem 10.31rem;
 
@@ -353,19 +372,19 @@ p{
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  
+
   align-items: center;
 
   background-color: var(--clr-primary-000);
 }
 
-.simplify h2{
+.simplify h2 {
   color: var(--clr-neutral-300);
 
   grid-column-end: span 2;
 }
 
-.simplify .button-get-started{
+.simplify .button-get-started {
   color: var(--clr-primary-000);
 
   background-color: var(--clr-neutral-300);
@@ -374,7 +393,7 @@ p{
   justify-self: end;
 }
 
-.footer{
+.footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: auto auto;
@@ -390,19 +409,19 @@ p{
   background-color: var(--clr-primary-200);
 }
 
-.footer .button-get-started{
+.footer .button-get-started {
   min-width: 4rem;
   box-shadow: unset;
 }
 
-.social-network-wrapper{
+.social-network-wrapper {
   display: flex;
   justify-content: space-evenly;
   gap: 0.75rem;
   justify-self: stretch;
   align-self: end;
 }
-.footer-menu{
+.footer-menu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -418,13 +437,13 @@ p{
   overflow: auto;
 }
 
-.update-wrapper{
+.update-wrapper {
   display: flex;
   gap: 0.5rem;
   align-items: start;
 }
 
-.update-wrapper input{
+.update-wrapper input {
   width: 12.5rem;
   height: 2.75rem;
 
@@ -432,14 +451,14 @@ p{
   border-radius: 1.375rem;
 }
 
-.update-wrapper input::placeholder{
+.update-wrapper input::placeholder {
   padding: 1rem;
 
   color: var(--clr-neutral-000);
   font-size: var(--fs-000);
 }
 
-.copyright{
+.copyright {
   justify-self: end;
   align-self: end;
 

@@ -17,8 +17,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/kjenzri/frontend-mentor-chanllenges/tree/main/interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://kjenzri.github.io/frontend-mentor-chanllenges/interactive-rating-component/)
+- Solution URL: [Add solution URL here](https://github.com/kjenzri/frontend-mentor-challenges/tree/main/interactive-rating-component)
+- Live Site URL: [Add live site URL here](https://kjenzri.github.io/frontend-mentor-challenges/interactive-rating-component/)
 
 ### Built with
 

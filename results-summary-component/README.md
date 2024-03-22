@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/kjenzri/frontend-mentor-chanllenges/tree/main/results-summary-component)
-- [Live Site URL](https://kjenzri.github.io/frontend-mentor-chanllenges/results-summary-component)
+- [Solution URL](https://github.com/kjenzri/frontend-mentor-challenges/tree/main/results-summary-component)
+- [Live Site URL](https://kjenzri.github.io/frontend-mentor-challenges/results-summary-component)
 
 ## Built with
 

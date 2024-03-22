@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL:](https://github.com/kjenzri/frontend-mentor-chanllenges/tree/main/product-preview-card-component)
-- [Live Site URL:](https://kjenzri.github.io/frontend-mentor-chanllenges/product-preview-card-component/)
+- [Solution URL:](https://github.com/kjenzri/frontend-mentor-challenges/tree/main/product-preview-card-component)
+- [Live Site URL:](https://kjenzri.github.io/frontend-mentor-challenges/product-preview-card-component/)
 
 ## My process
 

@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/kjenzri/frontend-mentor-chanllenges/tree/main/workit-landing-page)
-- [Live Site URL](https://kjenzri.github.io/frontend-mentor-chanllenges/workit-landing-page)
+- [Solution URL](https://github.com/kjenzri/frontend-mentor-challenges/tree/main/workit-landing-page)
+- [Live Site URL](https://kjenzri.github.io/frontend-mentor-challenges/workit-landing-page)
 
 ## Built with
 
