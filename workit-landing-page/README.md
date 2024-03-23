@@ -48,7 +48,7 @@ Users should be able to:
 
 ## What I learned
 
-The more important knowledge that I've acquired is about position relative and absolute
+The more important knowledge that I've acquired is about position relative and absolute, use ::before pseudo-element to create curved border and to customize list marker.
 
 ## Author
 
