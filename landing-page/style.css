@@ -187,9 +187,22 @@ p {
 
   list-style-type: none;
 
+  
+}
+
+.header > ul > li > a {
+  text-decoration: none;
   font-size: var(--fs-000);
   font-weight: var(--fw-medium);
   color: var(--clr-primary-100);
+}
+
+.header > ul > li > a:hover {
+  color: var(--clr-neutral-000);
+}
+
+.header > ul > li > a:hover {
+  
 }
 
 .button-get-started {
