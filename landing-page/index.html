@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
 
+
   <title>Frontend Mentor | Manage landing page</title>
 </head>
 
@@ -131,9 +132,10 @@
       <li>Privacy Policy</li>
     </ul>
     
-    <form class="update-wrapper">
-      <input placeholder="Updates in your inbox…" required type="email">
+    <form id="email-form" class="update-wrapper" novalidate>
+      <input placeholder="Updates in your inbox…" type="email" required >
       <button class="button-get-started">Go</button>
+      <p>Please insert a valid email</p>
     </form>
 
     <div class="social-network-wrapper">
@@ -151,3 +153,4 @@
 </body>
 
 </html>
+<script src="script.js"></script>

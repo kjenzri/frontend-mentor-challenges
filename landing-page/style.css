@@ -201,10 +201,6 @@ p {
   color: var(--clr-neutral-000);
 }
 
-.header > ul > li > a:hover {
-  
-}
-
 .button-get-started {
   color: var(--clr-neutral-300);
   font-size: var(--fs-000);
@@ -500,31 +496,34 @@ p {
   font-size: var(--fs-000);
 }
 
-[type="email"]:focus-visible{
+input:focus-visible{
   outline: none;
 }
-[type="email"]:focus-visible:invalid{
-  border: 1px solid red;  
-}
 
-[type="email"]:focus-visible:invalid::placeholder{
+input:invalid{
+  border: 1px solid red;
   color: red;
-  
 }
 
-/* [type="email"]{
-
-} */
+input:focus-visible:invalid::placeholder{
+  color: red;
+}
 
 form{
   position: relative;
 }
 
-form::after{
-  content: 'Please insert a valide email';
+form > p {
+  visibility: hidden;
+  
   position: absolute;
-
   top: 4rem;
+  left: 1.25rem;
+
+  font-size: 0.625rem;
+  font-style: italic;
+  color: red;
+  opacity: 1;
 }
 
 .copyright {
