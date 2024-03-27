@@ -121,11 +121,22 @@ body {
   justify-items: center;
 }
 
-.wrapper {
-  background-image: url(./images/bg-tablet-pattern.svg);
-  background-repeat: no-repeat;
-  background-position-x: 800px;
-  background-position-y: -200px;
+.background-image-top, .background-image-bottom{
+  position: absolute;
+  max-width: unset;
+}
+
+.background-image-top{
+  width: 29rem;
+  height: 29rem;
+  left: 6rem;
+  top: -9rem;
+}
+
+.background-image-bottom{
+  width: 29rem;
+  height: 29rem;
+  top: 500px;
 }
 
 main {
@@ -538,4 +549,39 @@ form > p {
   grid-column-start: 3;
 
   margin: 1rem;
+}
+
+@media (width <= 24rem) {
+
+  :root{
+    --padding-left-right: 1.5rem;
+    --content-max-width: 24rem;
+  }
+
+  .logo{
+    width: 6.875rem;
+    height: 1.125rem;
+  }
+
+  .header > ul {
+    display: none;
+  }
+
+  .button-get-started {
+    display: none;
+  }
+
+
+  .what {
+    column-gap: unset;
+  }
+
+  .what .flex-wrapper p {
+    width: auto;
+  }
+
+  .footer{
+    padding: unset;
+  }
+  
 }
