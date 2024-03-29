@@ -130,7 +130,7 @@ body {
   overflow: hidden;
 }
 
-.background-image-top, .background-image-bottom{
+.background-image{
   --background-image-size: 50rem;
 
   width: var(--background-image-size);
@@ -147,8 +147,8 @@ body {
 }
 
 .background-image-bottom{
-  bottom: 10rem;
-  left: -26rem;
+  bottom: 6rem;
+  left: -30rem;
 }
 
 main {
@@ -282,16 +282,7 @@ p {
   flex-direction: column;
   align-items: start;
   justify-content: space-evenly;
-
-  /* padding: 2rem 0; */
 }
-
-/* .wrapper-what {
-  background-image: url(./images/bg-tablet-pattern.svg);
-  background-repeat: no-repeat;
-  background-position-x: -33rem;
-  background-position-y: 23rem;
-} */
 
 .wrapper-what {
   position: relative;
@@ -409,8 +400,8 @@ p {
 }
 
 .simplify {
-
-  background-image: url(./images/bg-simplify-section-desktop.svg);
+  position: relative;
+  overflow: hidden;
 
   margin-top: 11.25rem;
   padding: 3.88rem 10.06rem 3.88rem 10.31rem;
@@ -423,6 +414,22 @@ p {
   align-items: center;
 
   background-color: var(--clr-primary-000);
+}
+
+.background-image-simplify, .background-image-simplify2 {
+  --background-image-size: 35rem;  
+  z-index: 0;
+  opacity: 0.1;
+}
+
+.background-image-simplify{
+  top: -5rem;
+  left: 14rem;
+}
+
+.background-image-simplify2 {
+  top: -26rem;
+  right: -20rem;  
 }
 
 .simplify h2 {
