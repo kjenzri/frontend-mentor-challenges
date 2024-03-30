@@ -621,6 +621,14 @@ form > p {
     gap: 0.75rem; 
   }
 
+  .background-image-bottom{
+    --background-image-size: 20rem;
+
+    top: -16rem;
+    left: 15.5rem;
+    /* right: 0rem; */
+  }
+
   .bring img {
     width: 9.56rem;
     height: 8.68rem;
@@ -660,7 +668,23 @@ form > p {
     grid-template-columns: unset;
     grid-template-rows: auto 1fr;
     column-gap: unset;
-    padding: 4rem var(--padding-left-right);
+    padding: 4rem 0 0 0;
+  }
+
+  .what .flex-wrapper{
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .what ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding-inline-start: 0;
+    margin-top: 2rem;
+  }
+
+  .what ol p {
+    text-align: left;
   }
 
   h2 {    
@@ -674,6 +698,36 @@ form > p {
     padding: 0 2rem;
   }
 
+  .what ol h3{
+    background-color: var(--clr-neutral-200);
+    padding-top: unset;
+    padding: 0.5rem 2rem;
+    top: -3rem;
+    position: absolute;
+    left: 4rem;
+    right: 0rem;
+    z-index: -1;
+  }
+
+  .what ol li::before {
+    --width: 67px;
+    --height: 39px;
+    content: "0" counter(my-awesome-counter);
+    position: absolute;
+    left: 1rem;
+    top: -3rem;
+    width: var(--width);
+    height: var(--height);
+    color: var(--clr-neutral-300);
+    font-size: var(--fs-100);
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-primary-000);
+    border: none;
+    border-radius: 100vh;
+    text-align: center;
+    line-height: 2rem;
+  }
+
   .what p{
     font-size: 0.875rem;
     line-height: 1.75rem;
@@ -681,8 +735,72 @@ form > p {
     padding: 0 1rem;
   }
 
+  .what ol p{
+    padding: 0 2rem 3rem 1rem;
+  }
+
   .what .flex-wrapper p {
     width: auto;
+  }
+
+  .avatar {
+    --avatar-width: 21.25rem;
+    position: relative;
+    width: var(--avatar-width);
+    height: 15.5rem;
+    flex-shrink: 0;
+    padding: 3rem 1.5rem 2.5rem 1.5rem;
+    background-color: var(--clr-neutral-300);
+  }
+
+  .avatar p {
+    font-size: 0.875rem;
+    margin: 1rem;
+  }
+
+  .caroussel-buttons{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .caroussel-button{
+    --caroussel-button-size: 0.5rem;
+    width: var(--caroussel-button-size);
+    height: var(--caroussel-button-size);
+    border: 1px solid var(--clr-primary-000);
+    border-radius: 50%;
+    margin: calc(var(--caroussel-button-size)*0.25);
+  }
+
+  .caroussel-button:hover{
+    background-color: var(--clr-primary-000);
+  }
+
+  .simplify {
+    margin-top: 2rem;
+    padding: unset;
+    min-height: 13.75rem;
+    display: grid;
+    grid-template-columns: unset;
+    grid-template-rows: auto auto;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .simplify h2 {
+    grid-column-end: unset;
+    font-size: var(--fs-450);
+    font-weight: var(--fw-bold);
+    padding: 5rem 2rem 1rem 2rem;
+  }
+
+  .simplify .button-get-started {
+    color: var(--clr-primary-000);
+    background-color: var(--clr-neutral-300);
+    grid-column: unset;
+    justify-self: unset;
+    margin-bottom: 6rem;
   }
 
   .footer{
