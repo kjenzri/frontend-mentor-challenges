@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;400;500;700;800&display=swap");
 
 /*CSS reset from https://www.joshwcomeau.com/css/custom-css-reset/ */
 /*
@@ -99,14 +99,17 @@ h6 {
   --fs-100: 1rem;
   --fs-200: 1.125rem;
   --fs-300: 1.5rem;
+  --fs-350: 1.8755rem;
   --fs-400: 2rem;
   --fs-450: 2.5rem;
   --fs-500: 3.5rem;
   --fs-600: 4.5rem;
 
+  --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-bold: 700;
+  --fw-extra-bold: 800;
 
   --padding-left-right: 10.31rem;
 
@@ -581,6 +584,15 @@ form > p {
     --content-max-width: 24rem;
   }
 
+  .background-image {
+    --background-image-size: 30rem;
+  }
+
+  .background-image-top {
+    right: -10rem;
+    top: -8rem;
+  }
+
   .logo{
     width: 6.875rem;
     height: 1.125rem;
@@ -590,13 +602,83 @@ form > p {
     display: none;
   }
 
-  .button-get-started {
+  header .button-get-started {
     display: none;
   }
 
+  .bring {
+    grid-template-columns: unset;
+    grid-template-rows: auto 1fr;
+
+    padding: 0 var(--padding-left-right);
+  }
+
+  .illustration-flex {
+    grid-row: 1;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+    gap: 0.75rem; 
+  }
+
+  .bring img {
+    width: 9.56rem;
+    height: 8.68rem;
+    /* border-radius: 0.25rem;
+    background: white;
+    box-shadow: 0px 10px 20px 0px rgba(80, 86, 98, 0.03); */
+  }
+
+  .bring p {
+    line-height: unset;
+    width: unset;
+
+    max-width: 20.1875rem;
+    line-height: 1.75rem;
+
+    margin: 0.5rem;
+  }
+
+  h1 {
+    font-size: var(--fs-450);
+    line-height: 3.125rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  p {
+    font-weight: var(--fw-light);
+    text-align: center;
+  }
+
+  .flex-wrapper{
+    align-items: center;
+  }
 
   .what {
+    display: grid;
+    grid-template-columns: unset;
+    grid-template-rows: auto 1fr;
     column-gap: unset;
+    padding: 4rem var(--padding-left-right);
+  }
+
+  h2 {    
+    font-size: var(--fs-350);
+    font-weight: var(--fw-extra-bold);
+    
+    line-height: 2.8125rem;
+
+    text-align: center;
+
+    padding: 0 2rem;
+  }
+
+  .what p{
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+
+    padding: 0 1rem;
   }
 
   .what .flex-wrapper p {
