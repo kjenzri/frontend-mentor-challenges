@@ -223,6 +223,10 @@ p {
   color: var(--clr-primary-100);
 }
 
+.menu > ul > li > a:hover {
+  color: var(--clr-neutral-000);
+}
+
 .header > ul > li > a:hover {
   color: var(--clr-neutral-000);
 }
