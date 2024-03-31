@@ -32,3 +32,30 @@ export function openMenu(){
   menuImage.src = stateIcon.get(newState);
   menuImage.attributes[data_stateConst].value = newState;
 }
+
+export function swipe(event){
+  const avatar = event.target.closest(".avatar");
+  let avatar_index = avatar.attributes["data-index"].value;
+  const button = document.querySelector(`.caroussel-button[data-index="${avatar_index}"]`);
+
+  if(event.detail.dir == "right"){
+    avatar_index++;
+    if(avatar_index > 3){
+      avatar_index = 0;
+    }
+  }
+  else if(event.detail.dir == "left"){
+    avatar_index--;
+    if(avatar_index < 0){
+      avatar_index = 3;
+    }
+  }
+
+  var nextAvatar = document.querySelector(`.avatar[data-index="${avatar_index}"]`);
+  var nextButton = document.querySelector(`.caroussel-button[data-index="${avatar_index}"]`);
+  
+  avatar.attributes["data-is-active"].value = false;
+  button.attributes["data-is-active"].value = false;
+  nextAvatar.attributes["data-is-active"].value = true;
+  nextButton.attributes["data-is-active"].value = true;
+}

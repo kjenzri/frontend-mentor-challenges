@@ -762,12 +762,25 @@ form > p {
 
   .avatar {
     --avatar-width: 21.25rem;
-    position: relative;
+    position: absolute;
     width: var(--avatar-width);
     height: 15.5rem;
     flex-shrink: 0;
     padding: 3rem 1.5rem 2.5rem 1.5rem;
     background-color: var(--clr-neutral-300);
+
+    transition: 
+      opacity 1s;
+  }
+
+  .avatar[data-is-active="false"] {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .avatar[data-is-active="true"] {
+    opacity: 1;
+    z-index: 1;
   }
 
   .avatar p {
@@ -788,10 +801,17 @@ form > p {
     border: 1px solid var(--clr-primary-000);
     border-radius: 50%;
     margin: calc(var(--caroussel-button-size)*0.25);
+
+    transition-property: background-color;
+    transition-duration: 1s;    
   }
 
-  .caroussel-button:hover{
+  .caroussel-button[data-is-active="true"]{
     background-color: var(--clr-primary-000);
+  }
+
+  .caroussel-button[data-is-active="false"]{
+    background-color: unset;
   }
 
   .simplify {
