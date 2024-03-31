@@ -1,7 +1,4 @@
-const email_form = document.getElementById('email-form');
-email_form.addEventListener('submit', validateForm);
-
-function validateForm(e) {
+export function validateForm(e) {
     const form = e.target;
     const formErrorMessage = form.querySelector("p");
     formErrorMessage.style.visibility = "hidden";
@@ -12,7 +9,7 @@ function validateForm(e) {
     }
 };
 
-function openMenu(){
+export function openMenu(){
   const data_stateConst = "data-state";
   const closeConst = "close";
   const openConst = "open";
