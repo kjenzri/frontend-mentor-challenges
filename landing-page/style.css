@@ -803,6 +803,15 @@ form > p {
     margin-bottom: 6rem;
   }
 
+  .background-image-simplify {
+    top: 3rem;
+    left: -24rem;
+  }
+
+  .background-image-simplify2{
+    display: none;
+  }
+
   .footer{
     padding: unset;
   }
