@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("/Rubik-VariableFont_wght.ttf")
+    format("woff2-variations");
+  font-weight: 400, 500;
+}
+@font-face {
+  font-family: "Rubik-Italic";
+  src: url("/Rubik-Italic-VariableFont_wght.ttf")
+    format("woff2-variations");
+  font-weight: 400;
+}
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -64,4 +76,76 @@
     --clr-neutral-000: hsl(216, 47%, 78%);
     --clr-neutral-100: hsl(220, 38%, 97%);
     --clr-neutral-200: hsl(0, 0%, 100%);
+
+    --ff-base: "Rubik",  sans-serif;
+    --ff-italic: "Rubik-Italic",  sans-serif;
+
+    --fs-000: 0.75rem;
+    --fs-100: 1.75rem;
+    --fs-200: 2.25rem;
+    --fs-300: 4rem;
+    --fs-400: 9rem;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
   }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  .display{
+    font-family: var(--ff-base);
+  }
+
+  .body-s{
+    font-family: var(--ff-italic);
+  }
+
+  h1,  
+  h3,
+  h4,
+  p,
+  .display{
+    font-weight: var(--fw-medium);
+  }
+
+  body,
+  h2,
+  .body-s{
+    font-weight: var(--fw-regular);
+  }
+
+  body,
+  .body-s{
+    font-size: var(--fs-000);
+    line-height: 150%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .display{
+    line-height: 100%;
+  }
+
+  .display{
+    font-size: var(--fs-400);
+  }
+  
+  h1,
+  h2{
+    font-size: var(--fs-300);
+  }
+
+  h3{
+    font-size: var(--fs-200);
+  }
+
+  h4{
+    font-size: var(--fs-100);
+  }
+
