@@ -1,44 +1,23 @@
-
-
+<header>
+  <div class="dark-light-switch">
+    <img src="assets/images/icon-sun-dark.svg" alt="sun for light mode">
+    <mat-slide-toggle>Slide</mat-slide-toggle>
+    <img src="assets/images/icon-moon-dark.svg" alt="moon for dark mode">
+  </div>
+</header>
 <main class="main">
-  <div class="content">
-   <!-- Quiz menu start -->
-
+  <div class="welcome">
     <h2>Welcome to the</h2>
     <h1>Frontend Quiz!</h1>
     <p class="body-s">Pick a subject to get started.</p>
- 
-   HTML
-   CSS
-   JavaScript
-   Accessibility
- 
-   <!-- Quiz menu end -->
- 
-   <!-- Quiz question start -->
- 
-   Question <!-- number --> of 10
- 
-   A
-   B
-   C
-   D
- 
-   Submit answer
- 
-   <!-- Quiz question end -->
- 
-   <!-- Quiz completed start -->
- 
-   Quiz completed
-   You scored...
- 
-   <!-- score --> out of 10
- 
-   <!-- Quiz completed end -->
+  </div>
+  <div class="menu">
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>Accessibility</li>
+    </ul>
   </div>
 </main>
-
-
-
 <router-outlet />
