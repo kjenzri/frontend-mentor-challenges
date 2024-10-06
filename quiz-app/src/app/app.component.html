@@ -1,7 +1,12 @@
 <header>
   <div class="dark-light-switch">
     <img src="assets/images/icon-sun-dark.svg" alt="sun for light mode">
-    <mat-slide-toggle>Slide</mat-slide-toggle>
+
+    <label class="toggle">      
+      <span class="slider" >
+        <input type="checkbox" checked>
+      </span>
+    </label>
     <img src="assets/images/icon-moon-dark.svg" alt="moon for dark mode">
   </div>
 </header>
@@ -13,10 +18,14 @@
   </div>
   <div class="menu">
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Javascript</li>
-      <li>Accessibility</li>
+      @for(quiz of this.data.quizzes; track quiz.title){
+        <li>          
+          <div class="menu-icon_container" attr.data-quiz-title="{{quiz.title}}">
+            <img class="menu-icon" src="{{ quiz.icon }}" alt="quiz icon">
+          </div>
+          <span>{{ quiz.title }}</span>
+        </li>
+      }
     </ul>
   </div>
 </main>

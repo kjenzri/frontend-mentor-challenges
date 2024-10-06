@@ -1,17 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import *  as quizzes from '../data.json';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
-    MatSlideToggleModule
+    RouterOutlet
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit  {
   title = 'quiz-app';
+  data: any = quizzes;
+
+  ngOnInit(): void {
+    console.log(this.data.quizzes);       
+  }
 }
