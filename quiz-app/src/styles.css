@@ -100,6 +100,7 @@
     --icon-moon: url(/assets/images/icon-moon-dark.svg);
   }
 
+
   :root:has(#theme:checked) {
     color-scheme: dark;
 
@@ -110,18 +111,6 @@
     --body-s-color: var(--clr-neutral-000);
     --icon-sun: url(/assets/images/icon-sun-light.svg);
     --icon-moon: url(/assets/images/icon-moon-light.svg);
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background-image: url(/assets/images/pattern-background-desktop-dark.svg);
-      --background-color: var(--clr-primary-100);
-      --color: var(--clr-neutral-200);
-      --menu-item-background-color: var(--clr-primary-200);
-      --body-s-color: var(--clr-neutral-000);
-      --icon-sun: url(/assets/images/icon-sun-light.svg);
-      --icon-moon: url(/assets/images/icon-moon-light.svg);
-    }
   }
 
   
