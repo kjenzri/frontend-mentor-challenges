@@ -222,7 +222,13 @@
     list-style: none;
   }
 
-  .menu > ul > li{
+  .menu > ul a {
+    text-decoration: none;
+  }
+  .menu > ul a:visited {
+    color: unset;
+  }
+  .menu > ul li{
     /* max-width: 35.25rem; */
     height: 6rem;
     background-color: var(--menu-item-background-color);

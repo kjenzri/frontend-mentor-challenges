@@ -1,21 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import *  as quizzes from '../data.json';
+import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    RouterOutlet
-  ],
+  imports: [ RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit  {
+export class AppComponent {
   title = 'quiz-app';
-  data: any = quizzes;
-
-  ngOnInit(): void {
-    console.log(this.data.quizzes);       
-  }
 }

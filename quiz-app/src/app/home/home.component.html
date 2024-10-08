@@ -1,0 +1,21 @@
+<main class="main">
+<div class="welcome">
+    <h2>Welcome to the</h2>
+    <h1>Frontend Quiz!</h1>
+    <p class="body-s">Pick a subject to get started.</p>
+</div>
+<div class="menu">
+    <ul>
+        @for(quiz of this.data.quizzes; track quiz.title){
+        <a routerLink="/question" routerLinkActive="active">
+            <li>
+                <div class="menu-icon_container" attr.data-quiz-title="{{quiz.title}}">
+                    <img class="menu-icon" src="{{ quiz.icon }}" alt="quiz icon">
+                </div>
+                <span>{{ quiz.title }}</span>
+            </li>
+        </a>
+        }
+    </ul>
+</div>
+</main>
