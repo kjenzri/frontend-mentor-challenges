@@ -90,6 +90,44 @@
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-bold: 700;
+
+    --background-image: url(/assets/images/pattern-background-desktop-light.svg);
+    --background-color: var(--clr-neutral-100);
+    --color: var(--clr-primary-100);    
+    --menu-item-background-color: var(--clr-neutral-200);
+    --body-s-color: var(--clr-primary-400);
+    --icon-sun: url(/assets/images/icon-sun-dark.svg);
+    --icon-moon: url(/assets/images/icon-moon-dark.svg);
+  }
+
+  :root:has(#theme:checked) {
+    color-scheme: dark;
+
+    --background-image: url(/assets/images/pattern-background-desktop-dark.svg);    
+    --background-color: var(--clr-primary-100);
+    --color: var(--clr-neutral-200);
+    --menu-item-background-color: var(--clr-primary-200);
+    --body-s-color: var(--clr-neutral-000);
+    --icon-sun: url(/assets/images/icon-sun-light.svg);
+    --icon-moon: url(/assets/images/icon-moon-light.svg);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-image: url(/assets/images/pattern-background-desktop-dark.svg);
+      --background-color: var(--clr-primary-100);
+      --color: var(--clr-neutral-200);
+      --menu-item-background-color: var(--clr-primary-200);
+      --body-s-color: var(--clr-neutral-000);
+      --icon-sun: url(/assets/images/icon-sun-light.svg);
+      --icon-moon: url(/assets/images/icon-moon-light.svg);
+    }
+  }
+
+  
+
+  html{
+    color-scheme: light dark;
   }
 
   body,
@@ -104,7 +142,7 @@
 
   .body-s{
     font-family: var(--ff-italic);
-    color: var(--clr-primary-400);
+    color: var(--body-s-color);    
   }
   
   h1,
@@ -127,16 +165,16 @@
   }
 
   body{
-    background-image: url(/assets/images/pattern-background-desktop-light.svg);
+    background-image: var(--background-image);
     background-size: cover;
     background-repeat: no-repeat;
 
     --left-right-padding: 8.75rem;
     padding-left: var(--left-right-padding);
     padding-right: var(--left-right-padding);
-    background-color: var(--clr-neutral-100);
+    background-color: var(--background-color);
 
-    color: var(--clr-primary-100);
+    color: var(--color);
   }
 
   h1,
@@ -178,6 +216,7 @@
     justify-content: flex-end;
     margin-top: 6.0625rem;
     margin-bottom: 6.1875rem;
+    align-items: baseline;
   }
 
   main{
@@ -197,7 +236,7 @@
   .menu > ul > li{
     /* max-width: 35.25rem; */
     height: 6rem;
-    background-color: var(--clr-neutral-200);
+    background-color: var(--menu-item-background-color);
     border-radius: 25px;
     margin-bottom: 1.5rem;
 
@@ -241,6 +280,14 @@
   .menu-icon {
     width: 2.5rem;
     height: 2.5rem;
+  }
+
+  .icon-sun::before{
+    content: var(--icon-sun);
+  }
+
+  .icon-moon::before{
+    content: var(--icon-moon);
   }
 
   .toggle{
