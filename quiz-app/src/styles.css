@@ -225,6 +225,9 @@
   .menu > ul a {
     text-decoration: none;
   }
+  .menu > ul a {
+    color: unset;
+  }
   .menu > ul a:visited {
     color: unset;
   }
