@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './question.component.css'
 })
 export class QuestionComponent {
-
+  quizTitle = 'Accessibility';
 }

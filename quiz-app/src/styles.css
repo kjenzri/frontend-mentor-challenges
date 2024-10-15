@@ -199,85 +199,41 @@
     font-size: var(--fs-100);
   }
 
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 6.0625rem;
+    padding-bottom: 6.1875rem;
+
+  }
+
+  header h1{
+    font-size: var(--fs-100);
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  .current-quiz-title{
+    display: flex;    
+
+    gap: 0.875rem;
+    /* align-items: baseline; */
+    align-items: center;
+  }
+
   .dark-light-switch{
     display: flex;
     gap: 1rem;
-    justify-content: flex-end;
-    margin-top: 6.0625rem;
-    margin-bottom: 6.1875rem;
+    justify-content: flex-end;    
     align-items: baseline;
   }
 
   main{
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .menu{
-    font-weight: var(--fw-medium);
-    font-size: var(--fs-100);
-  }
-
-  .menu > ul{
-    list-style: none;
-  }
-
-  .menu > ul a {
-    text-decoration: none;
-  }
-  .menu > ul a {
-    color: unset;
-  }
-  .menu > ul a:visited {
-    color: unset;
-  }
-  .menu > ul li{
-    /* max-width: 35.25rem; */
-    height: 6rem;
-    background-color: var(--menu-item-background-color);
-    border-radius: 25px;
-    margin-bottom: 1.5rem;
-
-    display: flex;
-    align-items: center;    
-    gap: 2rem;
-
-    padding: 1.25rem;
-
-    cursor: pointer;
-  }
-
-  .menu-icon_container{
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 0.5rem;
-
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-
-    background-color: #FFF1E9;
-  }
-
-  .menu-icon_container[data-quiz-title='HTML']{
-    background-color: #FFF1E9;
-  }
-
-  .menu-icon_container[data-quiz-title='CSS']{
-    background-color: #E0FDEF;
-  }
-
-  .menu-icon_container[data-quiz-title='JavaScript']{
-    background-color: #EBF0FF;
-  }
-
-  .menu-icon_container[data-quiz-title='Accessibility']{
-    background-color: #F6E7FF;
-  }
-
-  .menu-icon {
-    width: 2.5rem;
-    height: 2.5rem;
   }
 
   .icon-sun::before{
@@ -318,3 +274,79 @@
     width: 0;
     height: 0;
   }
+
+  .menu{
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-100);
+  }
+
+  .menu > ul{
+    list-style: none;
+  }
+
+  .menu > ul a {
+    text-decoration: none;
+  }
+  .menu > ul a {
+    color: unset;
+  }
+  .menu > ul a:visited {
+    color: unset;
+  }
+  .menu > ul li{
+    /* max-width: 35.25rem; */
+    height: 6rem;
+    background-color: var(--menu-item-background-color);
+    border-radius: 25px;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    align-items: center;    
+    gap: 2rem;
+
+    padding: 1.25rem;
+
+    cursor: pointer;
+  }
+
+  .header-icon-background,
+  .menu-icon_container{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+
+    background-color: #FFF1E9;
+  }
+
+  .menu-icon_container[data-quiz-title='HTML'],
+  .header-icon-background[data-quiz-title='HTML']{
+    background-color: #FFF1E9;
+  }
+
+  .menu-icon_container[data-quiz-title='CSS'],
+  .header-icon-background[data-quiz-title='CSS']
+  {
+    background-color: #E0FDEF;
+  }
+
+  .menu-icon_container[data-quiz-title='JavaScript'],
+  .header-icon-background[data-quiz-title='JavaScript']
+  {
+    background-color: #EBF0FF;
+  }
+
+  .menu-icon_container[data-quiz-title='Accessibility'],
+  .header-icon-background[data-quiz-title='Accessibility']{
+    background-color: #F6E7FF;
+  }
+
+  .menu-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  

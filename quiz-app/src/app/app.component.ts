@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ContentChild, contentChild, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { QuestionComponent } from './question/question.component';
 
 @Component({
   selector: 'app-root',
@@ -19,10 +20,12 @@ export class AppComponent implements OnInit {
   darkMode = false;
 
   ngOnInit(): void {
-    this.darkMode = localStorage.getItem(this.darkModeKey) === this.trueLiteral;
+    this.darkMode = localStorage
+      .getItem(this.darkModeKey) === this.trueLiteral;
   }
   
   onLightDarkChange(){
-    localStorage.setItem(this.darkModeKey, String(this.darkMode));
-  }
+    localStorage
+      .setItem(this.darkModeKey, String(this.darkMode));
+  } 
 }

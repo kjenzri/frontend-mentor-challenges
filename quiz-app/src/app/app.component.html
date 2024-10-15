@@ -1,8 +1,14 @@
 <header>
+  <div class="current-quiz-title">
+    <div class="header-icon-background" data-quiz-title='HTML'>
+      <img class="header-icon" src="./assets/images/icon-html.svg" alt="">
+    </div>
+    <h1>HTML</h1>
+  </div>
   <div class="dark-light-switch">
     <span class="icon-sun"></span>
-    <label class="toggle">      
-      <span class="slider" >
+    <label class="toggle">
+      <span class="slider">
         <input #theme id="theme" type="checkbox" [(ngModel)]="darkMode" (change)="onLightDarkChange()">
       </span>
     </label>
