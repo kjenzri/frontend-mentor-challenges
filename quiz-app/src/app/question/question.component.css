@@ -16,7 +16,7 @@ h2{
     font-family: var(--ff-italic);
     line-height: 150%;
     font-weight: var(--fw-regular);
-    color: var(--clr-primary-400);
+    color: var(--body-s-color);
 }
 
 .question{
@@ -51,7 +51,7 @@ h2{
     grid-column: 2/2;
     grid-row: 1/1;
 
-    counter-reset: my-awesome-counter;
+    counter-reset: response-item-counter;
 }
 
 .response-item, 
@@ -62,16 +62,16 @@ button{
 
 .response-item{
     padding: 1.25rem;
-    background-color: var(--clr-neutral-200);
+    background-color:  var(--menu-item-background-color);
     display: flex;
     align-items: center;
     gap: 2rem;
 
-    counter-increment: my-awesome-counter;
+    counter-increment: response-item-counter;
 }
 
 .response-item::before {
-    content: counter(my-awesome-counter, upper-alpha);
+    content: counter(response-item-counter, upper-alpha);
 
     background-color: var(--clr-neutral-100);
     width: 3.5rem;
