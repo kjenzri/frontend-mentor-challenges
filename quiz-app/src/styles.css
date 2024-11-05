@@ -81,6 +81,7 @@
     --ff-italic: "Rubik-Italic",  sans-serif;
 
     --fs-000: 1.25rem;
+    --fs-150: 1.5rem;
     --fs-100: 1.75rem;
     --fs-200: 2.25rem;
     --fs-300: 4rem;
@@ -98,6 +99,9 @@
     --body-s-color: var(--clr-primary-400);
     --icon-sun: url(/assets/images/icon-sun-dark.svg);
     --icon-moon: url(/assets/images/icon-moon-dark.svg);
+
+    --clr-error: red;
+    --clr-progressbar: var(--clr-neutral-200);
   }
 
 
@@ -111,6 +115,9 @@
     --body-s-color: var(--clr-neutral-000);
     --icon-sun: url(/assets/images/icon-sun-light.svg);
     --icon-moon: url(/assets/images/icon-moon-light.svg);
+
+    --clr-error: white;
+    --clr-progressbar: var(--clr-primary-200);
   }
 
   

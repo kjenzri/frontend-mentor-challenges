@@ -1,7 +1,7 @@
 .question-component{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr auto auto;
     row-gap: 2rem;
     column-gap: 8rem;
 }
@@ -27,7 +27,7 @@ h2{
 
 .progressbar{
     height: 1rem;
-    background-color: var(--clr-neutral-200);
+    background-color: var(--clr-progressbar);
     border-radius: 0.5rem;
     padding: 0.25rem;
 
@@ -72,6 +72,10 @@ button{
     counter-increment: response-item-counter;
 }
 
+.response-item[data-selected-item='true'],.response-item[data-wrong-response='true'],.response-item[data-correct-response='true']{
+    cursor: unset;
+}
+
 .response-item[data-selected-item='true']{
     border: 3px solid var(--clr-primary-000);
 }
@@ -98,7 +102,7 @@ button{
     color: var(--clr-neutral-200);
 }
 
-.response-item:not([data-selected-item='true']):hover::before {
+.response-item:not([data-selected-item='true']):not([data-correct-response='true']):hover::before {
     background-color: hsl(278, 100%, 95%);
     color: var(--clr-primary-000);
 }
@@ -157,9 +161,31 @@ button{
 }
 
 button:hover{
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .response{
     font-size: var(--fs-100);
+}
+
+.error-message{
+    color: var(--clr-error);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-150);
+
+    grid-column: 2/2;
+    grid-row: 3/3;
+    justify-self: center;
+
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.error-message::before{
+    content: '';
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-image: url(/assets/images/icon-error.svg);
 }
