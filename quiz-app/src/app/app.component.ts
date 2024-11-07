@@ -1,7 +1,6 @@
 import { Component, ContentChild, contentChild, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { QuestionComponent } from './question/question.component';
 
 @Component({
   selector: 'app-root',
