@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-question',
@@ -9,4 +10,8 @@ import { Component } from '@angular/core';
 })
 export class QuestionComponent {
   quizTitle = 'Accessibility';
+
+  constructor(public parent: AppComponent){
+    parent.currentQuizTitle = this.quizTitle;
+  }
 }

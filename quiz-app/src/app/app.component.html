@@ -1,9 +1,9 @@
 <header>
   <div class="current-quiz-title">
-    <div class="header-icon-background" data-quiz-title='HTML'>
-      <img class="header-icon" src="./assets/images/icon-html.svg" alt="">
-    </div>
-    <h1>HTML</h1>
+      <div class="header-icon-background" [attr.data-quiz-title]="currentQuizTitle">
+        <img class="header-icon" src="./assets/images/icon-html.svg" alt="">
+      </div>
+      <h1>{{currentQuizTitle}}</h1>
   </div>
   <div class="dark-light-switch">
     <span class="icon-sun"></span>

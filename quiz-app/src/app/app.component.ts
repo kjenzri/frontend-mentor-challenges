@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   private readonly trueLiteral = 'true';
   private readonly darkModeKey = 'lightMode';
   darkMode = false;
+  currentQuizTitle = '';
 
   ngOnInit(): void {
     this.darkMode = localStorage
